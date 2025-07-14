@@ -4,7 +4,19 @@
 <title>About</title>
 <head>
 <style>
-body {background-color: gainsboro;}
+body {
+          animation: grayShift 12s infinite;
+          transition: background-color 0.3s ease;
+        }}
+@keyframes grayShift {
+            0% { background-color: #f8f9fa; }    /* Light gray */
+            16.67% { background-color: #e9ecef; } /* Slightly darker */
+            33.33% { background-color: #dee2e6; } /* Medium light */
+            50% { background-color: #ced4da; }    /* Medium */
+            66.67% { background-color: #adb5bd; } /* Medium dark */
+            83.33% { background-color: #6c757d; } /* Dark gray */
+            100% { background-color: #f8f9fa; }   /* Back to light */
+        }
 h1   {color: blue;}
 p    {color: black;}
 </style>
